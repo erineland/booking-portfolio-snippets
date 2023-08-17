@@ -140,8 +140,8 @@ function addHeader(req, res, translations, showMenuOptions) {
     res.header = Components.getHeader(req, res, translations, showMenuOptions);
 }
 
-function add***REMOVED***efits(req, res, translations) {
-    res.***REMOVED***efits = Components.get***REMOVED***efits(req, res, translations);
+function addBenefits(req, res, translations) {
+    res.benefits = Components.getBenefits(req, res, translations);
 }
 
 const bookingProcessing = booking => {
@@ -557,7 +557,7 @@ function renderComponents(req, res) {
         Tracking.cloudwatch.counter.increment('payment.token.success');
 
         addHeader(req, res, res.translations, false);
-        add***REMOVED***efits(req, res, res.translations);
+        addBenefits(req, res, res.translations);
 
         return addPaymentDetails(req, res, res.translations, authToken, purchaseId);
     }).catch(error => {

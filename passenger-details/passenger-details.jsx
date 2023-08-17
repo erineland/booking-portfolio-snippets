@@ -285,7 +285,7 @@ export default class PassengerDetails extends Component {
                         required
                         submitted={this.state.submitted}
                         showPromptIcon={false}
-                        showPrompt***REMOVED***eathField={true}
+                        showPromptBeneathField={true}
                         labelClassOverrides="rw-c-passenger-details__contact-phone-number-field-label"
                         requiredLabelClassOverrides="rw-c-passenger-details__field-label--required"
                         containerClassNames="gb-u-pt++ gb-u-mt++ rw-c-passenger-details__contact-phone-number-field-container"
